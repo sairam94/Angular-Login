@@ -1,0 +1,46 @@
+<!Doctype HTML>
+<html ng-app="app">
+	<head>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<!-- Compiled and minified CSS -->
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  		<!-- Compiled and minified JavaScript -->
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>	
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+
+		<script src="app.js"></script>
+	</head>
+	<body ng-controller="LoginController">
+	  <div class="row">
+	    <div class="col s12 m5" style="margin-left:30%;margin-top:8%;">
+	        <div class="card">
+			  <div class="row">
+			  	<nav>
+			  	  <div style="margin-left:40%;">
+				    <div class="nav-wrapper">
+				      <a href="#" class="brand-logo">Login</a>
+				    </div>
+			 	   </div>
+	  			</nav>
+			    <form class="col s12">
+			      <div class="row">
+			        <div class="input-field col s6" style="margin-left:25%;">
+			          <input id="last_name" type="text" class="validate" ng-model="username">
+			          <label for="last_name">UserName</label>
+			        </div>
+			      </div>
+			      <div class="row">
+			        <div class="input-field col s6" style="margin-left:25%;">
+			          <input id="password" type="password" class="validate" ng-model="password">
+			          <label for="password">Password</label>
+			        </div>
+			      </div>
+			      <a class="waves-effect waves-light btn" ng-click="login()" style="margin-left:40%;margin-bottom:12%;" >Login</a>
+			    </form>
+			  </div>
+			</div>
+	    </div>
+	   </div>
+	</body>
+</html>
